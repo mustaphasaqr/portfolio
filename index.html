@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio / Mustapha Osama Saqr</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+<div id="scroll-bar" class="fixed right-6 top-1/2 transform -translate-y-1/2 h-64 w-1.5 bg-gray-700 rounded-full z-50 hidden sm:block">
+  <div id="scroll-indicator" class="bg-[#1DCD9F] h-0 w-full rounded-full transition-all duration-300 ease-out shadow-md shadow-[#1DCD9F]"></div>
+</div>
+
+   <!-- Loading Animation -->
+<div id="loading">
+  <div class="loading-text" id="name-loader">
+    <span data-text="M">M</span>
+    <span data-text="U">U</span>
+    <span data-text="S">S</span>
+    <span data-text="T">T</span>
+    <span data-text="A">A</span>
+    <span data-text="P">P</span>
+    <span data-text="H">H</span>
+    <span data-text="A">A</span>
+    <span data-text=" "> </span> <!-- space -->
+    <span data-text="S">S</span>
+    <span data-text="A">A</span>
+    <span data-text="Q">Q</span>
+    <span data-text="R">R</span>
+  </div>
+</div>
+
+
+    <!-- Hero Section -->
+<section class="position-relative container-fluid min-vh-100 d-flex justify-content-center align-items-center text-white overflow-hidden" style="background-color: #000000">
+  <!-- Hero Particle Background -->
+   <div id="starsContainer"></div>
+
+  <div id="particles-hero" class="position-absolute w-100 h-100 top-0 start-0" style="z-index: 0"></div>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div id="horizon">
+    <div class="glow"></div>
+  </div>
+<div id="earth"></div>
+  
+  <!-- Hero Content -->
+<div class="container text-center position-relative" style="z-index: 1">
+  <h1 class="display-4 fw-bold">
+    <span class="text-white me-2">Hi, I'm</span>
+    <button class="button" data-text="Mustapha">
+      <span class="actual-text">&nbsp;Mustapha&nbsp;</span>
+      <span aria-hidden="true" class="hover-text">&nbsp;Mustapha&nbsp;</span>
+    </button>
+  </h1>
+  <p class="lead text-light mt-3">
+    Software Engineer
+  </p>
+  <a href="#journey" class="shadow__btn mt-4">View Experience</a>
+</div>
+
+</section>
+
+    <!-- About Me Section -->
+<section id="about" class="bg-black text-white py-20 px-6">
+  <div
+    class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 px-4"
+  >
+    <!-- Profile Image -->
+   <div class="flex-shrink-0 w-[420px] h-[420px] rounded-full overflow-hidden shadow-[0_0_40px_0_rgba(255,255,255,0.3)] grayscale hover:grayscale-0 hover:scale-105 transition duration-500" id="about-img">
+  <img
+    src="./assets/sasa2.png"
+    alt="Mustapha Osama Saqr"
+    class="w-full h-full object-cover"
+  />
+</div>
+
+
+
+    <!-- Text Content -->
+    <div class="max-w-2xl" id="about-text">
+      <h2 class="text-3xl md:text-4xl font-semibold leading-snug mb-4">
+        I'm <span class="text-[#1DCD9F] font-bold">Mustapha Osama Saqr</span>, a
+        Software Engineer with hands-on experience at <span class="text-[#1DCD9F] font-bold">Microsoft</span> , contributing primarily remotely to quality
+engineering across large-scale, native and cross-platform mobile systems.
+      </h2>
+
+    
+
+      <p class="text-gray-300 text-lg leading-relaxed mb-6">
+        Transitioned into software development after
+        <span class="text-[#1DCD9F] font-bold">18 months</span>
+        of self-study.
+        <span class="text-[#1DCD9F] font-bold">Fluent in English</span>
+        with
+        <span class="text-[#1DCD9F] font-bold"> strong communication,</span>
+        <span class="text-[#1DCD9F] font-bold">collaboration,</span>and
+        <span class="text-[#1DCD9F] font-bold">problem-solving skills.</span>
+      </p>
+
+      <!-- Social Icons -->
+      <ul class="example-2">
+        <li class="icon-content">
+         
+        </li>
+        <li class="icon-content">
+          <a
+            href="https://www.linkedin.com/in/mustapha-osama-saqr/"
+            aria-label="LinkedIn"
+            data-social="linkedin"
+            target="_blank"
+          >
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="480" height="480" viewBox="0 0 48 48">
+              <path fill="#0288d1" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path><path fill="#fff" d="M14 19H18V34H14zM15.988 17h-.022C14.772 17 14 16.11 14 14.999 14 13.864 14.796 13 16.011 13c1.217 0 1.966.864 1.989 1.999C18 16.11 17.228 17 15.988 17zM35 24.5c0-3.038-2.462-5.5-5.5-5.5-1.862 0-3.505.928-4.5 2.344V19h-4v15h4v-8c0-1.657 1.343-3 3-3s3 1.343 3 3v8h4C35 34 35 24.921 35 24.5z"></path>
+              </svg>
+          </a>
+          <div class="tooltip">LinkedIn</div>
+        </li>
+        <li class="icon-content">
+          <a
+            href="mustaphaosamasaqr@gmail.com"
+            aria-label="Email"
+            data-social="email"
+          >
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="240" height="240" viewBox="0 0 48 48">
+              <path fill="#e0e0e0" d="M5.5,40.5h37c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11v26C2,38.933,3.567,40.5,5.5,40.5z"></path><path fill="#d9d9d9" d="M26,40.5h16.5c1.933,0,3.5-1.567,3.5-3.5V11c0-1.933-1.567-3.5-3.5-3.5h-37C3.567,7.5,2,9.067,2,11L26,40.5z"></path><path fill="#eee" d="M6.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L6.745,40.5z"></path><path fill="#e0e0e0" d="M25.745,40.5H42.5c1.933,0,3.5-1.567,3.5-3.5V11.5L18.771,31.616L25.745,40.5z"></path><path fill="#ca3737" d="M42.5,9.5h-37C3.567,9.5,2,9.067,2,11v26c0,1.933,1.567,3.5,3.5,3.5H7V12h34v28.5h1.5c1.933,0,3.5-1.567,3.5-3.5V11C46,9.067,44.433,9.5,42.5,9.5z"></path><path fill="#f5f5f5" d="M42.5,7.5H24H5.5C3.567,7.5,2,9.036,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.036,44.433,7.5,42.5,7.5z"></path><path fill="#e84f4b" d="M43.246,7.582L24,21L4.754,7.582C3.18,7.919,2,9.297,2,11c0,1.206,1.518,2.258,1.518,2.258L24,27.756l20.482-14.497c0,0,1.518-1.053,1.518-2.258C46,9.297,44.82,7.919,43.246,7.582z"></path>
+              </svg>
+          </a>
+          <div class="tooltip">Gmail</div>
+        </li>
+        <li class="icon-content">
+          <a
+            href="https://github.com/mustaphasaqr"
+            aria-label="GitHub"
+            data-social="github"
+            target="_blank"
+          >
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="240" height="240" viewBox="0 0 48 48">
+              <circle cx="28" cy="28" r="18" fill="#9fa8da"></circle><path fill="none" stroke="#18193f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M35.054,38.836	C31.97,41.137,28.144,42.5,24,42.5C13.783,42.5,5.5,34.217,5.5,24c0-2.917,0.675-5.676,1.878-8.13"></path><path fill="none" stroke="#18193f" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13.869,8.518	C16.779,6.61,20.26,5.5,24,5.5c10.217,0,18.5,8.283,18.5,18.5c0,2.941-0.686,5.721-1.907,8.19"></path><path fill="#18193f" d="M34,23c0-1.574-0.576-3.038-1.558-4.275c0.442-1.368,0.93-3.771-0.242-5.648	c-2.251,0-3.73,1.545-4.436,2.514C26.602,15.213,25.333,15,24,15s-2.602,0.213-3.764,0.591c-0.706-0.969-2.184-2.514-4.436-2.514	c-1.328,2.126-0.526,4.45-0.073,5.43C14.638,19.788,14,21.334,14,23c0,3.78,3.281,6.94,7.686,7.776	c-1.309,0.673-2.287,1.896-2.587,3.38h-1.315c-1.297,0-1.801-0.526-2.502-1.415c-0.692-0.889-1.437-1.488-2.331-1.736	c-0.482-0.051-0.806,0.316-0.386,0.641c1.419,0.966,1.516,2.548,2.085,3.583C15.168,36.161,16.229,37,17.429,37H19v5.942h10v-7.806	c0-1.908-1.098-3.544-2.686-4.36C30.719,29.94,34,26.78,34,23z"></path>
+              </svg>
+          </a>
+          <div class="tooltip">GitHub</div>
+        </li>
+      </ul>
+
+      <!-- Download Resume Button -->
+      <div class="flex align-items-center justify-content-center mt-8" style="gap: 50px">
+        <a
+          href="./assets/Mustapha Osama Saqr-cv.pdf"
+          download
+        >
+          <div class="download-container">
+            <label class="download-label">
+              <input type="checkbox" class="download-input" />
+              <span class="download-circle"
+                ><svg
+                  class="download-icon"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 19V5m0 14-4-4m4 4 4-4"
+                  ></path>
+                </svg>
+                <div class="download-square"></div>
+              </span>
+              <p class="download-title">Resume</p>
+              <p class="download-title">Open</p>
+            </label>
+          </div>
+        </a>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Experience SECTION -->
+<section id="journey" class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold mb-16 text-center text-[#1DCD9F]">My Experience</h2>
+    
+    <div class="relative">
+      <!-- Vertical Line -->
+      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#1DCD9F]"></div>
+
+      <!-- Timeline Card 1 - Right -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-end">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2"></div>
+        <div class="md:w-1/2 md:pl-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">Software Engineer @Microsoft (Clarity SDK, Quality Team)</h3>
+            <span class="text-sm text-gray-400">March 2025 – Present</span>
+            <p class="mt-2 text-gray-300"><ul class="list-disc list-inside text-white space-y-2">
+  <li>Integrated advanced network testing into Clarity SDK’s CI/CD performance pipeline, including thresholding, delta calculation, and automated CI/CD reporting.</li>
+  <li>Resolved complex cross-repository issues such as unsupported Android OS versions to ensure stable and graceful test behavior.</li>
+  <li>Developed automated test paths for Android apps (Tasty, Aurora, Copilot) using Appium Inspector, BrowserStack, Emulators of Android Studio.</li>
+  <li>Delivered a critical Copilot test path under tight deadlines handled complex login flows with web native context switching and was recognized by leadership for high-impact contributions.</li>
+  <li>Fine-tuned thresholds for CPU, memory, network, trace logs, and slow frames to ensure reliability across test runs.</li>
+  <li>Designed and presented a one-pager to propose a scalable solution for reducing noise in mobile performance tests by aggregating N-run metrics; demonstrated pre-implementation design and team communication skills.</li>
+  <li>Pushed and reviewed code via Git/Azure Repos; regularly reviewed teammate PRs and provided feedback to maintain quality and velocity.</li>
+  <li>Took ownership of complex CI/CD stories designed, implemented, and debugged multi-stage Azure quality pipelines.</li>
+</ul>
+</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline Card 2 - Left -->
+      <div class="relative mb-16 md:mb-24 md:flex justify-start">
+        <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+        <div class="md:w-1/2 md:pr-10">
+          <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+            <h3 class="text-xl font-semibold text-[#1DCD9F]">Junior Software Developer (Self-Initiated Project)</h3>
+            <span class="text-sm text-gray-400"> June 2024 – August 2024 </span>
+            <p class="mt-2 text-gray-300"><ul class="list-disc list-inside text-white space-y-2">
+  <li>Designed and developed a comprehensive desktop application for a driving license department as part of a self-initiated learning project.</li>
+  <li>Utilized C#, SQL Server, and ADO.NET to implement a three-tier architecture, ensuring scalability, modularity, and maintainability.</li>
+  <li>Applied object-oriented programming (OOP) principles.</li>
+  <li>Optimized SQL queries and database structures to manage complex relationships and improve performance.</li>
+</ul>
+</p>
+          </div>
+        </div>
+        <div class="md:w-1/2"></div>
+      </div>
+
+     
+</section>
+<!-- TECH STACK SECTION (GRID STYLE) -->
+<section id="tech-stack" class="bg-black text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold mb-16 text-center text-[#1DCD9F]">Technical Skills</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Card 1: Previously Learned -->
+      <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg">
+        <h3 class="text-xl font-semibold text-[#1DCD9F] mb-4">Previously Learned</h3>
+        <ul class="list-disc list-inside space-y-2 text-white">
+          <li><i class="fas fa-network-wired mr-2"></i>Computer Architecture & Networking</li>
+          <li><i class="devicon-microsoftsqlserver-plain colored mr-2"></i>SQL & T-SQL</li>
+          <li><i class="fas fa-layer-group mr-2"></i>3-tier Architecture, Auth</li>
+          <li><i class="fas fa-link mr-2"></i>RESTful APIs</li>
+          <li><i class="fas fa-cubes mr-2"></i>SOLID Principles</li>
+          <li><i class="devicon-cplusplus-plain colored mr-2"></i>C++</li>
+          <li><i class="devicon-csharp-plain colored mr-2"></i>C#</li>
+          <li><i class="devicon-html5-plain colored mr-2"></i>HTML5</li>
+          <li><i class="devicon-css3-plain colored mr-2"></i>CSS3</li>
+          <li><i class="devicon-javascript-plain colored mr-2"></i>JavaScript</li>
+          <li><i class="devicon-react-original colored mr-2"></i>React</li>
+        </ul>
+      </div>
+
+      <!-- Card 2: Currently Used -->
+      <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg">
+        <h3 class="text-xl font-semibold text-[#1DCD9F] mb-4">Currently Used @ Microsoft</h3>
+        <ul class="list-disc list-inside space-y-2 text-white">
+          <li><i class="devicon-git-plain colored mr-2"></i>Git Flow with Azure Repos</li>
+          <li><i class="fas fa-cogs mr-2"></i>Azure Pipelines (YAML)</li>
+          <li><i class="fas fa-laptop-code mr-2"></i>BrowserStack</li>
+          <li><i class="fas fa-mobile-alt mr-2"></i>Appium Inspector</li>
+          <li><i class="devicon-androidstudio-plain colored mr-2"></i>Android Studio Emulators</li>
+          <li><i class="fas fa-sync-alt mr-2"></i>CI/CD for App Quality</li>
+          <li><i class="fas fa-bug mr-2"></i>Debugging & Ownership</li>
+          <li><i class="devicon-java-plain colored mr-2"></i>Java</li>
+          <li><i class="devicon-python-plain colored mr-2"></i>Python</li>
+          <li><i class="devicon-typescript-plain colored mr-2"></i>TypeScript</li>
+        </ul>
+      </div>
+
+      <!-- Card 3: Soft Skills -->
+<div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg">
+  <h3 class="text-xl font-semibold text-[#1DCD9F] mb-4">Soft Skills</h3>
+  <ul class="list-disc list-inside space-y-2 text-white">
+    <li><i class="fas fa-lightbulb text-yellow-400 mr-2"></i>Ownership & Initiative</li>
+    <li><i class="fas fa-pen-ruler text-blue-400 mr-2"></i>Story Design & Execution</li>
+    <li><i class="fas fa-users text-green-400 mr-2"></i>Teamwork</li>
+    <li><i class="fas fa-people-arrows text-cyan-400 mr-2"></i>Remote Collaboration</li>
+    <li><i class="fas fa-comments text-indigo-400 mr-2"></i>Effective Communication</li>
+    <li><i class="fas fa-language text-purple-400 mr-2"></i>English Fluency (Conversational with Clear Accent)</li>
+    <li><i class="fas fa-chalkboard-teacher text-pink-400 mr-2"></i>Presentation & Demo Skills</li>
+    <li><i class="fas fa-random text-orange-400 mr-2"></i>Adaptability</li>
+    <li><i class="fas fa-search text-red-400 mr-2"></i>Analytical Thinking</li>
+  </ul>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="relative bg-black text-white py-20 px-6 overflow-hidden">
+
+  <!-- PARTICLES BACKGROUND -->
+  <div id="particles-projects" class="absolute top-0 left-0 w-full h-full z-0"></div>
+
+  <!-- ACTUAL PROJECT CONTENT -->
+  <div class="relative z-10">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Projects</h2>
+      <p class="text-gray-300 text-lg">Some of the things I've built.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+
+      <!-- SINGLE PROJECT CARD -->
+<div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+  <img src="./assets/e-commarce.jpg" alt="Portfolio Website Screenshot" class="w-full h-60 object-cover" />
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold mb-2">E-Commerce Platform (In Progress)</h3>
+    <p class="text-gray-700 mb-4">
+      Developing a feature-rich e-commerce application using React, implementing a secure and efficient back-end using .NET Core and SQL Server, focusing on creating a responsive, interactive user interface with optimized API integrations.
+    </p>
+
+    <!-- Tech Stack Badges -->
+    <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="w-4 h-4" />
+        React
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" alt=".NET Core" class="w-4 h-4" />
+        .NET Core
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" class="w-4 h-4" />
+        SQL Server
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-4 h-4" />
+        JavaScript
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/api/api-original.svg" alt="API" class="w-4 h-4" />
+        API
+      </span>
+    </div>
+
+    <!-- Project Links -->
+    <div class="flex gap-4">
+      <a href="https://github.com/mustaphasaqr/E-Commerce-Platform" target="_blank"
+        class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+
+
+      <!-- SINGLE PROJECT CARD -->
+<div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+  <img src="./assets/driving license.jpg" alt="Driving License Project Screenshot" class="w-full h-60 object-cover" />
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold mb-2">Driving License Project</h3>
+    <p class="text-gray-700 mb-4">
+      Developed a desktop application for a driving license department using C#, SQL Server, and ADO.NET, implementing a three-tier architecture for scalability and maintainability, applying OOP principles, and optimizing SQL queries for improved performance.
+    </p>
+
+    <!-- Tech Stack Badges -->
+    <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" class="w-4 h-4" />
+        C#
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" alt=".NET" class="w-4 h-4" />
+        ADO.NET
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" class="w-4 h-4" />
+        SQL Server
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows Forms" class="w-4 h-4" />
+        Windows Forms
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="OOP" class="w-4 h-4" />
+        OOP
+      </span>
+    </div>
+
+    <!-- Project Links -->
+    <div class="flex gap-4">
+      <a href="https://github.com/mustaphasaqr/Driving-License-Department-Application" target="_blank"
+        class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+<!-- SINGLE PROJECT CARD -->
+<div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+  <img src="./assets/HTML & CSS" alt="HTML & CSS Project Screenshot" class="w-full h-60 object-cover" />
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold mb-2">HTML & CSS Website</h3>
+    <p class="text-gray-700 mb-4">
+      Created a fully responsive website showcasing modern design principles, focusing on accessibility, clean code practices, and cross-browser compatibility.
+    </p>
+
+    <!-- Tech Stack Badges -->
+    <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" class="w-4 h-4" />
+        HTML5
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" class="w-4 h-4" />
+        CSS3
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg" alt="Cross-browser" class="w-4 h-4" />
+        Cross-Browser
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/accessibility/accessibility-original.svg" alt="Accessibility" class="w-4 h-4" />
+        Accessibility
+      </span>
+    </div>
+
+    <!-- Project Links -->
+    <div class="flex gap-4">
+      <a href="https://github.com/mustaphasaqr/html-css-project" target="_blank"
+        class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+<!-- SINGLE PROJECT CARD -->
+<div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+  <img src="./assets/bank.jpg" alt="Bank Project Screenshot" class="w-full h-60 object-cover" />
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold mb-2">Bank Project</h3>
+    <p class="text-gray-700 mb-4">
+      A console-based desktop banking application that manages user accounts, handles transactions, and updates balances. Built using C# and designed for simplicity, accuracy, and performance.
+    </p>
+
+    <!-- Tech Stack Badges -->
+    <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" class="w-4 h-4" />
+        C#
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" alt=".NET" class="w-4 h-4" />
+        .NET
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Console App" class="w-4 h-4" />
+        Console App
+      </span>
+    </div>
+
+    <!-- Project Links -->
+    <div class="flex gap-4">
+      <a href="https://github.com/mustaphasaqr/Bank-Project" target="_blank"
+        class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+<!-- SINGLE PROJECT CARD -->
+<div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+  <img src="./assets/calculator.jpg" alt="Desktop Calculator Screenshot" class="w-full h-60 object-cover" />
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold mb-2">Desktop Calculator Project</h3>
+    <p class="text-gray-700 mb-4">
+      A user-friendly desktop calculator built using C# to perform basic and advanced mathematical operations with efficient logic, providing a smooth and responsive user experience.
+    </p>
+
+    <!-- Tech Stack Badges -->
+    <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" class="w-4 h-4" />
+        C#
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg" alt=".NET" class="w-4 h-4" />
+        .NET
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-plain.svg" alt="WinForms" class="w-4 h-4" />
+        WinForms
+      </span>
+    </div>
+
+    <!-- Project Links -->
+    <div class="flex gap-4">
+      <a href="https://github.com/mustaphasaqr/Desktop-Calculator" target="_blank"
+        class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+        GitHub
+      </a>
+    </div>
+  </div>
+</div>
+<!-- SINGLE PROJECT CARD -->
+<div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+  <img src="./assets/portfolio.png" alt="Portfolio Website Screenshot" class="w-full h-60 object-cover" />
+  <div class="p-6">
+    <h3 class="text-2xl font-semibold mb-2">Portfolio Website</h3>
+    <p class="text-gray-700 mb-4">
+      My portfolio website featuring my projects, skills, and journey. Built with HTML, CSS, and JavaScript for a modern, interactive experience.
+    </p>
+
+    <!-- Tech Stack Badges -->
+    <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" class="w-4 h-4" />
+        HTML
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS" class="w-4 h-4" />
+        Tailwindcss
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-4 h-4" />
+        JavaScript
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="w-4 h-4" />
+        CSS
+      </span>
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/framer-logo.png" alt="Framer Motion" class="w-4 h-4" />
+        Framer Motion
+      </span>
+    </div>
+
+    <!-- Project Links -->
+    <div class="flex gap-4">
+      <a href="https://github.com/abhijeetBhale/Portfolio" target="_blank"
+        class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+        GitHub 
+      </a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<!-- CONTACT FORM SECTION -->
+<section id="contact-form" class="bg-[#0f0f0f] text-white py-20 px-6">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+      <p class="text-gray-400 text-lg">Feel free to reach out for collaboration or job opportunities.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Contact Info -->
+<div class="space-y-6">
+  <div>
+    <h3 class="text-2xl font-semibold mb-4 text-[#1DCD9F]">Let's Connect</h3>
+  </div>
+
+  <div class="space-y-4">
+    <div class="flex items-center space-x-3">
+      <div class="w-10 h-10 bg-[#1DCD9F] rounded-full flex items-center justify-center">
+        <i class="fas fa-envelope text-white"></i>
+      </div>
+      <div>
+        <p class="text-sm text-gray-400">Email</p>
+        <p class="text-white">mustaphaosamasaqr@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="flex items-center space-x-3">
+      <div class="w-10 h-10 bg-[#1DCD9F] rounded-full flex items-center justify-center">
+        <i class="fab fa-linkedin text-white"></i>
+      </div>
+      <div>
+        <p class="text-sm text-gray-400">LinkedIn</p>
+        <p class="text-white">linkedin.com/in/mustapha-osama-saqr</p>
+      </div>
+    </div>
+
+    <div class="flex items-center space-x-3">
+      <div class="w-10 h-10 bg-[#1DCD9F] rounded-full flex items-center justify-center">
+        <i class="fab fa-github text-white"></i>
+      </div>
+      <div>
+        <p class="text-sm text-gray-400">GitHub</p>
+        <p class="text-white">github.com/mustaphasaqr</p>
+      </div>
+    </div>
+
+    <div class="flex items-center space-x-3">
+      <div class="w-10 h-10 bg-[#1DCD9F] rounded-full flex items-center justify-center">
+        <i class="fas fa-phone text-white"></i>
+      </div>
+      <div>
+        <p class="text-sm text-gray-400">Phone</p>
+        <p class="text-white">+201040430713</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+     <!-- Contact Form -->
+<div class="bg-white text-black rounded-2xl p-8 shadow-xl">
+  <form id="contactForm" class="space-y-6">
+    <div class="grid md:grid-cols-2 gap-4">
+      <div>
+        <label for="firstName" class="block text-sm font-medium mb-2">First Name <span style="color: red">*</span></label>
+        <input 
+          type="text" 
+          id="firstName" 
+          name="firstName" 
+          required
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1DCD9F] focus:border-transparent transition-all"
+          placeholder="Mustapha"
+        >
+      </div>
+      <div>
+        <label for="lastName" class="block text-sm font-medium mb-2">Last Name <span style="color: red">*</span></label>
+        <input 
+          type="text" 
+          id="lastName" 
+          name="lastName" 
+          required
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1DCD9F] focus:border-transparent transition-all"
+          placeholder="Saqr"
+        >
+      </div>
+    </div>
+
+    <div>
+      <label for="email" class="block text-sm font-medium mb-2">Email <span style="color: red">*</span></label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        required
+        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1DCD9F] focus:border-transparent transition-all"
+        placeholder="mustaphaosamasaqr@gmail.com"
+      >
+    </div>
+
+    <div>
+      <label for="subject" class="block text-sm font-medium mb-2">Subject <span style="color: red">*</span></label>
+      <select 
+        id="subject" 
+        name="subject" 
+        required
+        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1DCD9F] focus:border-transparent transition-all"
+      >
+        <option value="">Select a subject</option>
+        <option value="project-inquiry">Project Inquiry</option>
+        <option value="job-opportunity">Job Opportunity</option>
+        <option value="collaboration">Collaboration</option>
+        <option value="general">General Message</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="message" class="block text-sm font-medium mb-2">Message <span style="color: red">*</span></label>
+      <textarea 
+        id="message" 
+        name="message" 
+        rows="5" 
+        required
+        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1DCD9F] focus:border-transparent transition-all resize-none"
+        placeholder="Tell me about your project or how I can help you..."
+      ></textarea>
+      <p class="text-xs text-gray-500 mt-1">
+        💡 Tip: Write a meaningful message with at least 3 words and 10 characters. Avoid random characters or excessive repetition.
+      </p>
+    </div>
+
+    <input type="hidden" name="_subject" value="New message from Mustapha Osama Saqr Portfolio!" />
+    <input type="hidden" name="site" value="Mustapha Osama Saqr Portfolio" />
+
+    <button 
+      type="submit" 
+      id="submitBtn"
+      class="w-full bg-[#1DCD9F] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#17b890] transition-all duration-300 transform hover:scale-105 focus:ring-2 focus:ring-[#1DCD9F] focus:ring-offset-2"
+    >
+      <span id="submitText">Send Message</span>
+      <span id="submitLoading" class="hidden">
+        <i class="fas fa-spinner fa-spin mr-2"></i>Sending...
+      </span>
+    </button>
+  </form>
+
+  <!-- Success/Error Messages -->
+  <div id="formMessage" class="mt-4 p-4 rounded-lg hidden">
+    <p id="messageText"></p>
+  </div>
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@motionone/dom/dist/motion.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/motion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ParticleJs -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Back to Top Button -->
+    <div class="wrapper">
+      <button class="back2top-button" id="backToTop">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+          <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+        </svg>
+        <span class="button-label">Back to Top</span>
+      </button>
+    </div>
+    <script src="script.js"></script>
+    </script>
+
+    <script>
+  const starsContainer = document.getElementById('starsContainer');
+  const starsCount = 500; // عدد النجوم
+  for (let i = 0; i < starsCount; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = Math.random() * window.innerHeight + 'px';
+    star.style.left = Math.random() * window.innerWidth + 'px';
+    starsContainer.appendChild(star);
+  }
+</script>
+
+  </body>
+</html>
